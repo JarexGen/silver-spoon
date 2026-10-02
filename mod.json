@@ -1,0 +1,21 @@
+{
+	"name": "Silver Spoon",
+	"description": "Spoon-fed heroes: stats that grow every level and unlimited secondary skills.",
+	"modType": "Mechanics",
+	"version": "1.0.0",
+	"author": "An Bui",
+	"compatibility": {
+		"min": "1.7.0"
+	},
+	"softDepends": [
+		"hota",
+		"wake-of-gods",
+		"tides-of-war"
+	],
+	"contact": "https://github.com/JarexGen/silver-spoon",
+	"changelog": {
+		"1.0.0": [
+			"Initial release: Level Scaling, Unlimited Secondary Skills"
+		]
+	}
+}
