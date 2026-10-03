@@ -1,8 +1,8 @@
 {
 	"name": "Level Scaling",
-	"description": "Heroes grow stronger every level: +20% experience gain, +1 to all primary skills, +1% double-damage chance, ignore 1% enemy defense, +2% spell damage, +100 gold per day and +2% land movement - each multiplied by the hero level.",
+	"description": "Heroes grow stronger every level: +20% experience gain, +1 to all primary skills, +1% double-damage chance, ignore 1% enemy defense, +2% spell damage, +100 gold per day, +10% land movement and +100 sea movement points - each multiplied by the hero level. Rough terrain also costs 50 fewer movement points per tile, like Advanced Pathfinding.",
 	"modType": "Mechanics",
-	"version": "1.0",
+	"version": "1.1",
 	"author": "An Bui",
 	"compatibility": {
 		"min": "1.7.0"
@@ -50,9 +50,21 @@
 				"movementScaling": {
 					"type": "MOVEMENT",
 					"subtype": "heroMovementLand",
-					"val": 2,
+					"val": 10,
 					"valueType": "PERCENT_TO_ALL",
 					"updater": "TIMES_HERO_LEVEL"
+				},
+				"seaMovementScaling": {
+					"type": "MOVEMENT",
+					"subtype": "heroMovementSea",
+					"val": 100,
+					"valueType": "BASE_NUMBER",
+					"updater": "TIMES_HERO_LEVEL"
+				},
+				"roughTerrainDiscount": {
+					"type": "ROUGH_TERRAIN_DISCOUNT",
+					"val": 50,
+					"valueType": "BASE_NUMBER"
 				},
 				"attackScaling": {
 					"type": "PRIMARY_SKILL",
