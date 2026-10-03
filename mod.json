@@ -2,7 +2,7 @@
 	"name": "Silver Spoon",
 	"description": "Spoon-fed heroes: stats that grow every level and unlimited secondary skills.",
 	"modType": "Mechanics",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "An Bui",
 	"compatibility": {
 		"min": "1.7.0"
@@ -14,6 +14,9 @@
 	],
 	"contact": "https://github.com/JarexGen/silver-spoon",
 	"changelog": {
+		"1.0.2": [
+			"Level Scaling: a bonus is skipped for heroes whose specialty already gives the same bonus (previously only experience)"
+		],
 		"1.0.1": [
 			"Level Scaling: land movement +10% per level (was +2%), new +100 sea movement points per level, rough terrain costs 50 fewer movement points per tile"
 		],

@@ -1,6 +1,6 @@
 {
 	"name": "Level Scaling",
-	"description": "Heroes grow stronger every level: +20% experience gain, +1 to all primary skills, +1% double-damage chance, ignore 1% enemy defense, +2% spell damage, +100 gold per day, +10% land movement and +100 sea movement points - each multiplied by the hero level. Rough terrain also costs 50 fewer movement points per tile, like Advanced Pathfinding.",
+	"description": "Heroes grow stronger every level: +20% experience gain, +1 to all primary skills, +1% double-damage chance, ignore 1% enemy defense, +2% spell damage, +100 gold per day, +10% land movement and +100 sea movement points - each multiplied by the hero level. Rough terrain also costs 50 fewer movement points per tile, like Advanced Pathfinding. A hero whose own specialty already gives one of these bonuses keeps only the specialty's version.",
 	"modType": "Mechanics",
 	"version": "1.1",
 	"author": "An Bui",
@@ -27,56 +27,134 @@
 				"doubleDamageScaling": {
 					"type": "DOUBLE_DAMAGE_CHANCE",
 					"val": 1,
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "DOUBLE_DAMAGE_CHANCE",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"defenceIgnoreScaling": {
 					"type": "ENEMY_DEFENCE_REDUCTION",
 					"val": 1,
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "ENEMY_DEFENCE_REDUCTION",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"spellDamageScaling": {
 					"type": "SPELL_DAMAGE",
 					"subtype": "any",
 					"val": 2,
 					"valueType": "BASE_NUMBER",
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "SPELL_DAMAGE",
+							"bonusSubtype": "any",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"goldScaling": {
 					"type": "GENERATE_RESOURCE",
 					"subtype": "gold",
 					"val": 100,
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "GENERATE_RESOURCE",
+							"bonusSubtype": "gold",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"movementScaling": {
 					"type": "MOVEMENT",
 					"subtype": "heroMovementLand",
 					"val": 10,
 					"valueType": "PERCENT_TO_ALL",
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "MOVEMENT",
+							"bonusSubtype": "heroMovementLand",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"seaMovementScaling": {
 					"type": "MOVEMENT",
 					"subtype": "heroMovementSea",
 					"val": 100,
 					"valueType": "BASE_NUMBER",
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "MOVEMENT",
+							"bonusSubtype": "heroMovementSea",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"roughTerrainDiscount": {
 					"type": "ROUGH_TERRAIN_DISCOUNT",
 					"val": 50,
-					"valueType": "BASE_NUMBER"
+					"valueType": "BASE_NUMBER",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "ROUGH_TERRAIN_DISCOUNT",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"attackScaling": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "attack",
 					"val": 1,
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "PRIMARY_SKILL",
+							"bonusSubtype": "attack",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"defenceScaling": {
 					"type": "PRIMARY_SKILL",
 					"subtype": "defence",
 					"val": 1,
-					"updater": "TIMES_HERO_LEVEL"
+					"updater": "TIMES_HERO_LEVEL",
+					"limiters": [
+						"noneOf",
+						{
+							"type": "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType": "PRIMARY_SKILL",
+							"bonusSubtype": "defence",
+							"bonusSourceType": "HERO_SPECIAL"
+						}
+					]
 				},
 				"spellpowerScaling": {
 					"type": "PRIMARY_SKILL",
