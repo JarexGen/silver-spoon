@@ -7,20 +7,20 @@
 	"compatibility": {
 		"min": "1.7.0"
 	},
-	"settings": {
-		"bonuses": {
-			"perHero": {
-				"experienceScaling": {
-					"type": "HERO_EXPERIENCE_GAIN_PERCENT",
-					"val": 20,
-					"valueType": "PERCENT_TO_BASE",
-					"updater": "TIMES_HERO_LEVEL",
-					"limiters": [
+	"settings" : {
+		"bonuses" : {
+			"perHero" : {
+				"experienceScaling" : {
+					"type" : "HERO_EXPERIENCE_GAIN_PERCENT",
+					"val" : 20,
+					"valueType" : "PERCENT_TO_BASE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "HERO_EXPERIENCE_GAIN_PERCENT",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "HERO_EXPERIENCE_GAIN_PERCENT",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
@@ -31,181 +31,181 @@
 					"limiters": [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "DOUBLE_DAMAGE_CHANCE",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "DOUBLE_DAMAGE_CHANCE",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"doubleDamageLevelOneOffset": {
-					"type": "DOUBLE_DAMAGE_CHANCE",
-					"val": -1,
-					"limiters": [
+				"doubleDamageLevelOneOffset" : {
+					"type" : "DOUBLE_DAMAGE_CHANCE",
+					"val" : -1,
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "DOUBLE_DAMAGE_CHANCE",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "DOUBLE_DAMAGE_CHANCE",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"defenceIgnoreScaling": {
-					"type": "ENEMY_DEFENCE_REDUCTION",
-					"val": 1,
-					"updater": "TIMES_HERO_LEVEL",
-					"limiters": [
+				"defenceIgnoreScaling" : {
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : 1,
+					"updater" : "TIMES_HERO_LEVEL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "ENEMY_DEFENCE_REDUCTION",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "ENEMY_DEFENCE_REDUCTION",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"defenceIgnoreLevelOneOffset": {
-					"type": "ENEMY_DEFENCE_REDUCTION",
-					"val": -1,
-					"limiters": [
+				"defenceIgnoreLevelOneOffset" : {
+					"type" : "ENEMY_DEFENCE_REDUCTION",
+					"val" : -1,
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "ENEMY_DEFENCE_REDUCTION",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "ENEMY_DEFENCE_REDUCTION",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"spellDamageScaling": {
-					"type": "SPELL_DAMAGE",
-					"subtype": "any",
-					"val": 2,
-					"valueType": "BASE_NUMBER",
-					"updater": "TIMES_HERO_LEVEL",
-					"limiters": [
+				"spellDamageScaling" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "any",
+					"val" : 2,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "SPELL_DAMAGE",
-							"bonusSubtype": "any",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "SPELL_DAMAGE",
+							"bonusSubtype" : "any",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"spellDamageLevelOneOffset": {
-					"type": "SPELL_DAMAGE",
-					"subtype": "any",
-					"val": -2,
-					"valueType": "BASE_NUMBER",
-					"limiters": [
+				"spellDamageLevelOneOffset" : {
+					"type" : "SPELL_DAMAGE",
+					"subtype" : "any",
+					"val" : -2,
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "SPELL_DAMAGE",
-							"bonusSubtype": "any",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "SPELL_DAMAGE",
+							"bonusSubtype" : "any",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"goldScaling": {
-					"type": "GENERATE_RESOURCE",
-					"subtype": "gold",
-					"val": 100,
-					"updater": "TIMES_HERO_LEVEL",
-					"limiters": [
+				"goldScaling" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "gold",
+					"val" : 100,
+					"updater" : "TIMES_HERO_LEVEL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "GENERATE_RESOURCE",
-							"bonusSubtype": "gold",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "GENERATE_RESOURCE",
+							"bonusSubtype" : "gold",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"goldLevelOneOffset": {
-					"type": "GENERATE_RESOURCE",
-					"subtype": "gold",
-					"val": -100,
-					"limiters": [
+				"goldLevelOneOffset" : {
+					"type" : "GENERATE_RESOURCE",
+					"subtype" : "gold",
+					"val" : -100,
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "GENERATE_RESOURCE",
-							"bonusSubtype": "gold",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "GENERATE_RESOURCE",
+							"bonusSubtype" : "gold",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"movementScaling": {
-					"type": "MOVEMENT",
-					"subtype": "heroMovementLand",
-					"val": 10,
-					"valueType": "PERCENT_TO_ALL",
-					"updater": "TIMES_HERO_LEVEL",
-					"limiters": [
+				"movementScaling" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementLand",
+					"val" : 10,
+					"valueType" : "PERCENT_TO_ALL",
+					"updater" : "TIMES_HERO_LEVEL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "MOVEMENT",
-							"bonusSubtype": "heroMovementLand",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MOVEMENT",
+							"bonusSubtype" : "heroMovementLand",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"movementLevelOneOffset": {
-					"type": "MOVEMENT",
-					"subtype": "heroMovementLand",
-					"val": -10,
-					"valueType": "PERCENT_TO_ALL",
-					"limiters": [
+				"movementLevelOneOffset" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementLand",
+					"val" : -10,
+					"valueType" : "PERCENT_TO_ALL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "MOVEMENT",
-							"bonusSubtype": "heroMovementLand",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MOVEMENT",
+							"bonusSubtype" : "heroMovementLand",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"seaMovementScaling": {
-					"type": "MOVEMENT",
-					"subtype": "heroMovementSea",
-					"val": 100,
-					"valueType": "BASE_NUMBER",
-					"updater": "TIMES_HERO_LEVEL",
-					"limiters": [
+				"seaMovementScaling" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+					"val" : 100,
+					"valueType" : "BASE_NUMBER",
+					"updater" : "TIMES_HERO_LEVEL",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "MOVEMENT",
-							"bonusSubtype": "heroMovementSea",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MOVEMENT",
+							"bonusSubtype" : "heroMovementSea",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"seaMovementLevelOneOffset": {
-					"type": "MOVEMENT",
-					"subtype": "heroMovementSea",
-					"val": -100,
-					"valueType": "BASE_NUMBER",
-					"limiters": [
+				"seaMovementLevelOneOffset" : {
+					"type" : "MOVEMENT",
+					"subtype" : "heroMovementSea",
+					"val" : -100,
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "MOVEMENT",
-							"bonusSubtype": "heroMovementSea",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MOVEMENT",
+							"bonusSubtype" : "heroMovementSea",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
-				"roughTerrainDiscount": {
-					"type": "ROUGH_TERRAIN_DISCOUNT",
-					"val": 50,
-					"valueType": "BASE_NUMBER",
-					"limiters": [
+				"roughTerrainDiscount" : {
+					"type" : "ROUGH_TERRAIN_DISCOUNT",
+					"val" : 50,
+					"valueType" : "BASE_NUMBER",
+					"limiters" : [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "ROUGH_TERRAIN_DISCOUNT",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "ROUGH_TERRAIN_DISCOUNT",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
@@ -217,10 +217,10 @@
 					"limiters": [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "PRIMARY_SKILL",
-							"bonusSubtype": "attack",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "PRIMARY_SKILL",
+							"bonusSubtype" : "attack",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
@@ -232,10 +232,10 @@
 					"limiters": [
 						"noneOf",
 						{
-							"type": "HAS_ANOTHER_BONUS_LIMITER",
-							"bonusType": "PRIMARY_SKILL",
-							"bonusSubtype": "defence",
-							"bonusSourceType": "HERO_SPECIAL"
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "PRIMARY_SKILL",
+							"bonusSubtype" : "defence",
+							"bonusSourceType" : "HERO_SPECIAL"
 						}
 					]
 				},
