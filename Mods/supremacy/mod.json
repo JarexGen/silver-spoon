@@ -7,6 +7,12 @@
 	"compatibility": {
 		"min": "1.7.0"
 	},
+	"softDepends": [
+		"haven-town",
+		"ruins-town",
+		"new-old-heroes",
+		"new-pavilion"
+	],
 	"conflicts": [
 		"new-skills-pack.omnimancy"
 	],

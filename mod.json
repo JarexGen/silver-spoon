@@ -15,7 +15,8 @@
 	"contact": "https://github.com/JarexGen/silver-spoon",
 	"changelog": {
 		"1.1.1": [
-			"Unlimited Secondary Skills: every learnable skill is offered at each level-up (was 2), including up to 6 upgrades of skills the hero already has; use the arrows in the level-up window to browse them"
+			"Unlimited Secondary Skills: every learnable skill is offered at each level-up (was 2), including up to 6 upgrades of skills the hero already has; use the arrows in the level-up window to browse them",
+			"Supremacy: heroes from other mods who start with an elemental magic skill now get Supremacy instead, and any Fire, Air, Water or Earth Magic handed out by a map also becomes Supremacy"
 		],
 		"1.1.0": [
 			"Level Scaling: +20% experience gain per level now starts at level 1",
