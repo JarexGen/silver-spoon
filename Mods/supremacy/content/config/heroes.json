@@ -502,5 +502,109 @@
 				"level" : "basic"
 			}
 		]
+	},
+	"new-monsters-pack.kurek-creatures.new-content-for-pavilion.pavilionpharaoh:keknutt": {
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "supremacy",
+				"level": "basic"
+			}
+		]
+	},
+	"new-monsters-pack.kurek-creatures.new-content-for-pavilion.pavilionpharaoh:mexnefer": {
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "supremacy",
+				"level": "basic"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.tok heroes:rn_birog": {
+		"skills": [
+			{
+				"skill": "supremacy",
+				"level": "basic"
+			},
+			{
+				"skill": "diplomacy",
+				"level": "basic"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.vanilla heroes:h_auris": {
+		"skills": [
+			{
+				"skill": "supremacy",
+				"level": "advanced"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.vanilla heroes:h_bel": {
+		"skills": [
+			{
+				"skill": "supremacy",
+				"level": "advanced"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.vanilla heroes:h_eordan": {
+		"skills": [
+			{
+				"skill": "supremacy",
+				"level": "advanced"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.vanilla heroes:h_gre": {
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "supremacy",
+				"level": "basic"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.vanilla heroes:h_hana": {
+		"skills": [
+			{
+				"skill": "supremacy",
+				"level": "advanced"
+			}
+		]
+	},
+	"new-monsters-pack.tok.more heroes.vanilla heroes:h_pandora": {
+		"skills": [
+			{
+				"skill": "offence",
+				"level": "basic"
+			},
+			{
+				"skill": "supremacy",
+				"level": "basic"
+			}
+		]
+	},
+	"tarnum.tarnumcourtyard:tarnumPhilosopher": {
+		"skills": [
+			{
+				"skill": "wisdom",
+				"level": "basic"
+			},
+			{
+				"skill": "supremacy",
+				"level": "basic"
+			}
+		]
 	}
 }

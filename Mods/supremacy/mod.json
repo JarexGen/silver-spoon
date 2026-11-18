@@ -11,7 +11,12 @@
 		"haven-town",
 		"ruins-town",
 		"new-old-heroes",
-		"new-pavilion"
+		"new-pavilion",
+		"hota",
+		"neutral-heroes",
+		"tarnum",
+		"tides-of-war",
+		"new-monsters-pack"
 	],
 	"conflicts" : [
 		"new-skills-pack.omnimancy"
