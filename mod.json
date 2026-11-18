@@ -1,8 +1,8 @@
 {
 	"name": "Silver Spoon",
-	"description": "Spoon-fed heroes: bonuses that grow every level, unlimited secondary skills, and one Supremacy skill for all four magic schools.",
+	"description": "Spoon-fed heroes: bonuses that grow every level, unlimited secondary skills, one Supremacy skill for all four magic schools, and stronger Mysticism and Eagle Eye.",
 	"modType": "Mechanics",
-	"version": "1.1.1",
+	"version": "1.2.0",
 	"author": "An Bui",
 	"compatibility": {
 		"min": "1.7.0"
@@ -14,6 +14,11 @@
 	],
 	"contact": "https://github.com/JarexGen/silver-spoon",
 	"changelog": {
+		"1.2.0": [
+			"New submod Skill Rework: Mysticism restores 20% / 35% / 50% of the hero's maximum spell points every day (at least 5 / 10 / 15)",
+			"New submod Improved Eagle Eye: before every battle the hero fires a free Magic Arrow at every enemy stack, and learns every enemy spell cast in a won battle (100%, up to level 2 / 4 / 5)",
+			"Supremacy: 10 more heroes from HotA, Tarnum, Tides of War, Neutral Heroes and New Monsters Pack start with Supremacy instead of an elemental magic skill"
+		],
 		"1.1.1": [
 			"Unlimited Secondary Skills: every learnable skill is offered at each level-up (was 2), including up to 6 upgrades of skills the hero already has; use the arrows in the level-up window to browse them",
 			"Supremacy: heroes from other mods who start with an elemental magic skill now get Supremacy instead, and any Fire, Air, Water or Earth Magic handed out by a map also becomes Supremacy"
